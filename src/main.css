@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+}
+
+body,
+#root,
+#root > .ant-layout {
+  height: 100vh;
+}

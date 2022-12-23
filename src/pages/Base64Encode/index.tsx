@@ -4,6 +4,7 @@ import { encode } from "js-base64";
 
 export default function Base64Encode() {
   const [form] = Form.useForm();
+
   const onEncode = () => {
     const input: string = form.getFieldValue("input");
     if (input) {
@@ -34,7 +35,7 @@ export default function Base64Encode() {
           <Input.TextArea placeholder="在此次输入（或粘贴）......" rows={10} />
         </Form.Item>
         <Form.Item name="eachLine" valuePropName="checked">
-          <Checkbox>分别对每一行进行解码</Checkbox>
+          <Checkbox>分别对每一行进行编码</Checkbox>
         </Form.Item>
         <Form.Item name="urlSafe" valuePropName="checked">
           <Checkbox>进行 URL 安全编码</Checkbox>

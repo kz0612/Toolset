@@ -1,7 +1,7 @@
-import { Menu } from "antd";
 import React, { useEffect, useMemo, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Routes from "../../Routes";
+import StyledMenu from "./style";
 
 export default function MyMenu() {
   let location = useLocation();
@@ -20,5 +20,5 @@ export default function MyMenu() {
     setSelectedKeys([location.pathname]);
   }, [location]);
 
-  return <Menu mode="inline" selectedKeys={selectedKeys} items={items} />;
+  return <StyledMenu mode="inline" selectedKeys={selectedKeys} items={items} />;
 }

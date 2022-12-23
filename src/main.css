@@ -7,3 +7,7 @@ body,
 #root > .ant-layout {
   height: 100vh;
 }
+
+.ant-form-item {
+  margin-bottom: 16px;
+}

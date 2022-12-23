@@ -1,4 +1,10 @@
-import { Base64Decode, Base64Encode, UrlDecode, UrlEncode } from "./pages";
+import {
+  Base64Decode,
+  Base64Encode,
+  UrlDecode,
+  UrlEncode,
+  UuidGenerate,
+} from "./pages";
 import React from "react";
 import { MyLayout } from "./components";
 
@@ -36,6 +42,15 @@ export default [
     element: (
       <MyLayout>
         <UrlEncode />
+      </MyLayout>
+    ),
+  },
+  {
+    path: "/pages/uuid-generate",
+    name: "UuidGenerate",
+    element: (
+      <MyLayout>
+        <UuidGenerate />
       </MyLayout>
     ),
   },

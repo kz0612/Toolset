@@ -2,6 +2,7 @@ import React from "react";
 import { Layout, theme } from "antd";
 import MyMenu from "../MyMenu";
 import StyledLayout from "./style";
+import { GithubOutlined } from "@ant-design/icons";
 
 const { Content, Header, Sider } = Layout;
 export default function MyLayout({
@@ -17,6 +18,9 @@ export default function MyLayout({
     <StyledLayout>
       <Header className="header">
         <div className="logo">Toolset</div>
+        <a href="https://github.com/kz0612/Toolset" target='_blank'>
+          <GithubOutlined />
+        </a>
       </Header>
       <Content className="content">
         <Layout className="layout">

@@ -7,6 +7,7 @@ import {
 } from "./pages";
 import React from "react";
 import { MyLayout } from "./components";
+import QrCode from "./pages/QrCode";
 
 export default [
   {
@@ -24,6 +25,15 @@ export default [
     element: (
       <MyLayout>
         <Base64Encode />
+      </MyLayout>
+    ),
+  },
+  {
+    path: "/pages/qr-code",
+    name: "QrCode",
+    element: (
+      <MyLayout>
+        <QrCode />
       </MyLayout>
     ),
   },

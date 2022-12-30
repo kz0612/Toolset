@@ -1,13 +1,13 @@
 import {
   Base64Decode,
   Base64Encode,
+  QrCode,
   UrlDecode,
   UrlEncode,
   UuidGenerate,
 } from "./pages";
 import React from "react";
 import { MyLayout } from "./components";
-import QrCode from "./pages/QrCode";
 
 export default [
   {

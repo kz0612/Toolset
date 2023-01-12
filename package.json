@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@ant-design/icons": "4.8.0",
+    "@ant-design/icons": "5.0.0",
     "antd": "5.1.4",
     "js-base64": "3.7.4",
     "qrcode.react": "3.1.0",

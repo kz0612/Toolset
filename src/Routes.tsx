@@ -1,13 +1,13 @@
+import { MyLayout } from "./components";
 import {
   Base64Decode,
   Base64Encode,
+  DatetimeCalculate,
   QrCode,
   UrlDecode,
   UrlEncode,
   UuidGenerate,
 } from "./pages";
-import React from "react";
-import { MyLayout } from "./components";
 
 export default [
   {
@@ -25,6 +25,15 @@ export default [
     element: (
       <MyLayout>
         <Base64Encode />
+      </MyLayout>
+    ),
+  },
+  {
+    path: "/pages/datetime-calculate",
+    name: "DatetimeCalculate",
+    element: (
+      <MyLayout>
+        <DatetimeCalculate />
       </MyLayout>
     ),
   },

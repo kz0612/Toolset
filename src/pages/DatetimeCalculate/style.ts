@@ -7,12 +7,12 @@ export default styled.div`
     width: 280px;
   }
 
-  .ant-input-group {
+  .ant-space-compact {
+    .ant-select {
+      width: 70px;
+    }
     .ant-input-number {
       width: 140px;
-    }
-    .ant-select-selector {
-      width: 70px;
     }
   }
 `;

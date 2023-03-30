@@ -5,9 +5,9 @@ import {
   DatePicker,
   Divider,
   Form,
-  Input,
   InputNumber,
   Select,
+  Space,
 } from "antd";
 import dayjs from "dayjs";
 import { useEffect, useState } from "react";
@@ -60,7 +60,7 @@ function MyInputGroup({ value = {}, onChange }: MyInputGroupProps) {
   };
 
   return (
-    <Input.Group compact>
+    <Space.Compact>
       <Select onChange={onAChange} value={value.op || op}>
         <Select.Option value="before">往前</Select.Option>
         <Select.Option value="after">往后</Select.Option>
@@ -72,7 +72,7 @@ function MyInputGroup({ value = {}, onChange }: MyInputGroupProps) {
         <Select.Option value="month">月</Select.Option>
         <Select.Option value="year">年</Select.Option>
       </Select>
-    </Input.Group>
+    </Space.Compact>
   );
 }
 

@@ -427,8 +427,9 @@ html body {
   }
 
   .content {
-    padding: 0 50px;
+    background-color: #fff;
     height: 100%;
+    padding: 0 25px;
     .layout {
       height: 100%;
     }

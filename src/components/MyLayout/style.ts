@@ -11,7 +11,7 @@ export default styled(Layout)`
     }
     a {
       display: flex;
-      align-content:center;
+      align-content: center;
     }
     .anticon-github {
       color: #fff;
@@ -25,5 +25,12 @@ export default styled(Layout)`
     .layout {
       height: 100%;
     }
+  }
+
+  .ant-layout-footer {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 `;

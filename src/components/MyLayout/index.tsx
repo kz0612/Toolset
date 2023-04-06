@@ -18,7 +18,7 @@ export default function MyLayout({
     <StyledLayout>
       <Header className="header">
         <div className="logo">Toolset</div>
-        <a href="https://github.com/kz0612/Toolset" target='_blank'>
+        <a href="https://github.com/kz0612/Toolset" target="_blank">
           <GithubOutlined />
         </a>
       </Header>
@@ -39,6 +39,26 @@ export default function MyLayout({
           </Content>
         </Layout>
       </Content>
+      <Layout.Footer style={{ textAlign: "center" }}>
+        <a href="https://www.jetbrains.com/?from=Toolset" target="_blank">
+          <img
+            src="https://resources.jetbrains.com/storage/products/company/brand/logos/jb_square.svg"
+            alt="JetBrains Black Box Logo logo."
+            width={50}
+          />
+        </a>
+        <span>
+          Special thanks to{" "}
+          <a href="https://www.jetbrains.com/?from=Toolset" target="_blank">
+            JetBrains
+          </a>{" "}
+          for licensing{" "}
+          <a href="https://www.jetbrains.com/webstorm/" target="_blank">
+            WebStorm
+          </a>{" "}
+          and other IDEs for free for open source projects.
+        </span>
+      </Layout.Footer>
     </StyledLayout>
   );
 }

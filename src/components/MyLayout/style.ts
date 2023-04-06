@@ -33,5 +33,13 @@ export default styled(Layout)`
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    a:first-child {
+      width: 45px;
+      height: 45px;
+      img {
+        width: 100%;
+      }
+    }
   }
 `;

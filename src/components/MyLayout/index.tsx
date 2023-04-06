@@ -44,7 +44,6 @@ export default function MyLayout({
           <img
             src="https://resources.jetbrains.com/storage/products/company/brand/logos/jb_square.svg"
             alt="JetBrains Black Box Logo logo."
-            width={50}
           />
         </a>
         <span>

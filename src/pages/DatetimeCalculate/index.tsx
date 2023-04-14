@@ -12,6 +12,7 @@ import {
 import dayjs from "dayjs";
 import { useEffect, useState } from "react";
 import StyledDiv from "./style";
+import useTitle from "../../hooks/useTitle";
 
 interface MyInputGroupValue {
   op?: string;
@@ -77,6 +78,8 @@ function MyInputGroup({ value = {}, onChange }: MyInputGroupProps) {
 }
 
 export default function DatetimeCalculate() {
+  useTitle("DatetimeCalculate");
+
   const [form] = Form.useForm();
   const [diff, setDiff] = useState<number | undefined>();
   const [newDate, setNewDate] = useState<string | undefined>();

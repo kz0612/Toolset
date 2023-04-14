@@ -1,7 +1,10 @@
 import { Button, Checkbox, Form, Input } from "antd";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
+import useTitle from "../../hooks/useTitle";
 
 export default function UrlEncode() {
+  useTitle("UrlEncode");
+
   const [form] = Form.useForm();
 
   const onEncode = () => {

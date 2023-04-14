@@ -1,8 +1,11 @@
 import { Button, Checkbox, Form, Input } from "antd";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import { encode } from "js-base64";
+import useTitle from "../../hooks/useTitle";
 
 export default function Base64Encode() {
+  useTitle("Base64Encode");
+
   const [form] = Form.useForm();
 
   const onEncode = () => {

@@ -2,8 +2,11 @@ import { Button, Form, Input, Radio } from "antd";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import { v1, v4 } from "uuid";
 import StyledDiv from "./style";
+import useTitle from "../../hooks/useTitle";
 
 export default function UuidGenerate() {
+  useTitle("UuidGenerate");
+
   const [form] = Form.useForm();
 
   const onGenerate = () => {

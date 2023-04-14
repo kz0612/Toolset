@@ -2,8 +2,11 @@ import { Button, Form, Input, Radio } from "antd";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import { useState } from "react";
 import { QRCodeSVG } from "qrcode.react";
+import useTitle from "../../hooks/useTitle";
 
 export default function QrCode() {
+  useTitle("QrCode");
+
   const [form] = Form.useForm();
   const [value, setValue] = useState<string>();
   const [size, setSize] = useState(128);

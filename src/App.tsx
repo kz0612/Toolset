@@ -1,5 +1,5 @@
-import { createHashRouter, Navigate, RouterProvider } from "react-router-dom";
 import React, { useMemo } from "react";
+import { createHashRouter, Navigate, RouterProvider } from "react-router-dom";
 import Routes from "./Routes";
 
 export default function App() {

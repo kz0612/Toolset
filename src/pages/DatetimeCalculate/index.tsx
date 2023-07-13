@@ -11,8 +11,8 @@ import {
 } from "antd";
 import dayjs from "dayjs";
 import { useEffect, useState } from "react";
-import StyledDiv from "./style";
 import useTitle from "../../hooks/useTitle";
+import StyledDiv from "./style";
 
 interface MyInputGroupValue {
   op?: string;
@@ -106,7 +106,7 @@ export default function DatetimeCalculate() {
       setNewDate(
         dayjs(val3.valueOf())
           .add(flag * val, unit)
-          .format("YYYY-MM-DD dddd")
+          .format("YYYY-MM-DD dddd"),
       );
     } else {
       setNewDate(undefined);

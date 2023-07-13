@@ -11,5 +11,5 @@ dayjs.locale("zh-cn");
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <ConfigProvider locale={zhCN}>
     <App />
-  </ConfigProvider>
+  </ConfigProvider>,
 );

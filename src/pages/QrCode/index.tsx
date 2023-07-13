@@ -1,7 +1,7 @@
-import { Button, Form, Input, Radio } from "antd";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
-import { useState } from "react";
+import { Button, Form, Input, Radio } from "antd";
 import { QRCodeSVG } from "qrcode.react";
+import { useState } from "react";
 import useTitle from "../../hooks/useTitle";
 
 export default function QrCode() {

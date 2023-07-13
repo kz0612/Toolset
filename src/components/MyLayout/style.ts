@@ -1,19 +1,23 @@
-import styled from "styled-components";
 import { Layout } from "antd";
+import styled from "styled-components";
 
 export default styled(Layout)`
   display: flex;
+
   .my-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     .logo {
       color: #fff;
     }
+
     a {
       display: flex;
       align-content: center;
     }
+
     .anticon-github {
       color: #fff;
       font-size: 32px;
@@ -47,6 +51,7 @@ export default styled(Layout)`
         a:first-child {
           width: 45px;
           height: 45px;
+
           img {
             width: 100%;
           }

@@ -1,8 +1,8 @@
-import React from "react";
+import { GithubOutlined } from "@ant-design/icons";
 import { Layout } from "antd";
+import React from "react";
 import MyMenu from "../MyMenu";
 import StyledLayout from "./style";
-import { GithubOutlined } from "@ant-design/icons";
 
 const { Content, Header, Sider } = Layout;
 export default function MyLayout({

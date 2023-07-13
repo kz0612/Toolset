@@ -1,9 +1,9 @@
-import { Button, Checkbox, Form, Input } from "antd";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
+import { Button, Checkbox, Form, Input } from "antd";
 import useTitle from "../../hooks/useTitle";
 
 export default function UrlDecode() {
-  useTitle("UrlDecode")
+  useTitle("UrlDecode");
 
   const [form] = Form.useForm();
 
@@ -17,7 +17,7 @@ export default function UrlDecode() {
           input
             .split("\n")
             .map((item) => decodeURIComponent(item))
-            .join("\n")
+            .join("\n"),
         );
       } else {
         form.setFieldValue("output", decodeURIComponent(input));

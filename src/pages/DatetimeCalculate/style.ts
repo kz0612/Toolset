@@ -11,6 +11,7 @@ export default styled.div`
     .ant-select {
       width: 70px;
     }
+
     .ant-input-number {
       width: 140px;
     }

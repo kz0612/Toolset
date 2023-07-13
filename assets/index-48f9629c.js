@@ -370,17 +370,21 @@ html body {
   height: 100%;
 `;function JB(){let e=Zl();const[t,n]=u.useState([]),r=u.useMemo(()=>Yg.map(o=>({label:W.jsx(fB,{to:o.path,children:o.name}),key:o.path,title:o.name})),[]);return u.useEffect(()=>{n([e.pathname])},[e]),W.jsx(ZB,{mode:"inline",selectedKeys:t,items:r})}const eV=ec(af)`
   display: flex;
+
   .my-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     .logo {
       color: #fff;
     }
+
     a {
       display: flex;
       align-content: center;
     }
+
     .anticon-github {
       color: #fff;
       font-size: 32px;
@@ -414,6 +418,7 @@ html body {
         a:first-child {
           width: 45px;
           height: 45px;
+
           img {
             width: 100%;
           }
@@ -436,6 +441,7 @@ html body {
     .ant-select {
       width: 70px;
     }
+
     .ant-input-number {
       width: 140px;
     }

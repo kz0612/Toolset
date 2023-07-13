@@ -1,5 +1,5 @@
-import { Button, Checkbox, Form, Input } from "antd";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
+import { Button, Checkbox, Form, Input } from "antd";
 import useTitle from "../../hooks/useTitle";
 
 export default function UrlEncode() {
@@ -17,7 +17,7 @@ export default function UrlEncode() {
           input
             .split("\n")
             .map((item) => encodeURIComponent(item))
-            .join("\n")
+            .join("\n"),
         );
       } else {
         form.setFieldValue("output", encodeURIComponent(input));

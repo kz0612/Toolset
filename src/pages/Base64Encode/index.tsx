@@ -1,5 +1,5 @@
-import { Button, Checkbox, Form, Input } from "antd";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
+import { Button, Checkbox, Form, Input } from "antd";
 import { encode } from "js-base64";
 import useTitle from "../../hooks/useTitle";
 
@@ -19,7 +19,7 @@ export default function Base64Encode() {
           input
             .split("\n")
             .map((item) => encode(item, urlSafe))
-            .join("\n")
+            .join("\n"),
         );
       } else {
         form.setFieldValue("output", encode(input, urlSafe));

@@ -1,5 +1,5 @@
-import { Button, Checkbox, Form, Input } from "antd";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
+import { Button, Checkbox, Form, Input } from "antd";
 import { decode } from "js-base64";
 import useTitle from "../../hooks/useTitle";
 
@@ -18,7 +18,7 @@ export default function Base64Decode() {
           input
             .split("\n")
             .map((item) => decode(item))
-            .join("\n")
+            .join("\n"),
         );
       } else {
         form.setFieldValue("output", decode(input));

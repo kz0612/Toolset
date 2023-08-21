@@ -43,16 +43,20 @@ export default function UuidGenerate() {
       <p>按下生成按钮生成 UUID</p>
       <Form form={form}>
         <Form.Item name="version" initialValue="v4" label="版本">
-          <Radio.Group>
-            <Radio value="v1">Version 1</Radio>
-            <Radio value="v4">Version 4</Radio>
-          </Radio.Group>
+          <Radio.Group
+            options={[
+              { label: "Version 1", value: "v1" },
+              { label: "Version 4", value: "v4" },
+            ]}
+          />
         </Form.Item>
         <Form.Item name="strCase" initialValue="lower" label="大小写">
-          <Radio.Group>
-            <Radio value="lower">小写输出</Radio>
-            <Radio value="upper">大写输出</Radio>
-          </Radio.Group>
+          <Radio.Group
+            options={[
+              { label: "小写输出", value: "lower" },
+              { label: "大写输出", value: "upper" },
+            ]}
+          />
         </Form.Item>
         <Form.Item name="count" initialValue="1" label="生成个数">
           <Radio.Group>

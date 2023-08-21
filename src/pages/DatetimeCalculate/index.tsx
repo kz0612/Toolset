@@ -62,17 +62,25 @@ function MyInputGroup({ value = {}, onChange }: MyInputGroupProps) {
 
   return (
     <Space.Compact>
-      <Select onChange={onAChange} value={value.op || op}>
-        <Select.Option value="before">往前</Select.Option>
-        <Select.Option value="after">往后</Select.Option>
-      </Select>
+      <Select
+        onChange={onAChange}
+        options={[
+          { label: "往前", value: "before" },
+          { label: "往后", value: "after" },
+        ]}
+        value={value.op || op}
+      />
       <InputNumber onChange={onBChange} value={value.val || val} />
-      <Select onChange={onCChange} value={value?.unit || unit}>
-        <Select.Option value="day">天</Select.Option>
-        <Select.Option value="week">周</Select.Option>
-        <Select.Option value="month">月</Select.Option>
-        <Select.Option value="year">年</Select.Option>
-      </Select>
+      <Select
+        onChange={onCChange}
+        options={[
+          { label: "天", value: "day" },
+          { label: "周", value: "week" },
+          { label: "月", value: "month" },
+          { label: "年", value: "year" },
+        ]}
+        value={value?.unit || unit}
+      />
     </Space.Compact>
   );
 }

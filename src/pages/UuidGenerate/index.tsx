@@ -58,17 +58,13 @@ export default function UuidGenerate() {
             ]}
           />
         </Form.Item>
-        <Form.Item name="count" initialValue="1" label="生成个数">
-          <Radio.Group>
-            {[...Array(10)].map((_, i) => {
-              const val = i + 1 + "";
-              return (
-                <Radio key={val} value={val}>
-                  {val}
-                </Radio>
-              );
-            })}
-          </Radio.Group>
+        <Form.Item name="count" initialValue={1} label="生成个数">
+          <Radio.Group
+            options={[...Array(10)].map((_, i) => ({
+              label: i + 1 + "",
+              value: i + 1,
+            }))}
+          />
         </Form.Item>
         <Form.Item>
           <Button type="primary" onClick={onGenerate}>

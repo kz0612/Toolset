@@ -27,10 +27,12 @@ export default function QrCode() {
           <Input.TextArea placeholder="在此次输入（或粘贴）......" rows={5} />
         </Form.Item>
         <Form.Item name="size" initialValue={128} label="二维码大小">
-          <Radio.Group>
-            <Radio value={128}>128</Radio>
-            <Radio value={256}>256</Radio>
-          </Radio.Group>
+          <Radio.Group
+            options={[
+              { label: "128", value: 128 },
+              { label: "256", value: 256 },
+            ]}
+          />
         </Form.Item>
         <Form.Item>
           <Button type="primary" onClick={onGenerate}>

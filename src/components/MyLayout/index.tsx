@@ -48,6 +48,11 @@ export default function MyLayout({
                 and other IDEs for free for open source projects.
               </span>
             </Layout.Footer>
+            <div style={{marginBottom: 10, textAlign: "center" }}>
+              <a href="https://www.rainyun.com/MTE4MDI2_">
+                <span>本站由雨云提供计算服务</span>
+              </a>
+            </div>
           </Content>
         </Layout>
       </Content>
